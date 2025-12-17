@@ -1,87 +1,70 @@
-Semantic Document Search using FAISS
-Overview
+Semantic Document Search (FAISS)
 
-This project implements a Semantic Document Search system that retrieves documents based on meaning rather than exact keyword matching.
-It uses sentence embeddings and FAISS to perform fast and accurate similarity search over unstructured documents.
+A semantic document search system that retrieves documents based on meaning instead of keywords using sentence embeddings and FAISS.
 
-Features
+🚀 Features
 
 Supports PDF, DOCX, and TXT files
 
-Converts documents into semantic embeddings
+Meaning-based search using embeddings
 
-Uses FAISS for efficient similarity search
+Fast similarity search with FAISS
 
-Retrieves the most relevant document snippets
+Returns relevant document snippets with similarity scores
 
-Displays similarity score and source file
-
-Technologies Used
+🛠 Tech Stack
 
 Python
 
-FAISS (Facebook AI Similarity Search)
+FAISS
 
 Sentence Transformers
 
 NumPy
 
-PyPDF2
+PyPDF2, python-docx
 
-python-docx
+⚙️ How It Works
 
-How It Works
+Load documents from a folder
 
-Documents are loaded from a folder
+Split text into chunks
 
-Text is extracted and split into chunks
+Generate embeddings
 
-Each chunk is converted into an embedding
+Index embeddings using FAISS
 
-Embeddings are indexed using FAISS
+Perform semantic search on user queries
 
-User query is embedded and searched
+▶️ Usage
 
-Most relevant document snippets are returned
-
-Installation
-
-Install the required libraries:
+Install dependencies:
 
 pip install sentence-transformers faiss-cpu PyPDF2 python-docx numpy
 
-Usage
 
-Place your documents in a folder
-
-Run the Jupyter Notebook
-
-Enter a search query
-
-View the most relevant results with similarity scores
-
-Example:
+Run the notebook and search:
 
 semantic_search_best("applications of artificial intelligence")
 
-Output
+📌 Output
 
-Source document name
+Source document
 
 Similarity score
 
 Relevant text snippet
 
-Future Improvements
+📈 Future Improvements
 
-Add overlapping chunks
+Index persistence
 
-Save and load FAISS index
+Overlapping chunks
 
-Build a web interface
+Web UI
 
-Integrate with large language models
+LLM integration (RAG)
 
-Author
+👤 Author
 
-Shahanas
+shahanas
